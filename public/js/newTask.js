@@ -11,7 +11,12 @@ function initializePage() {
   user = getCookie("email");
   defaultSetting()
   hide();
-    $('#submitBtn').click(addTask);
+  $('#submitBtn').click(addTask);
+  $('#cancelBtn').click(goBack);
+}
+
+function goBack() {
+    window.history.back()
 }
 
 // Default setting

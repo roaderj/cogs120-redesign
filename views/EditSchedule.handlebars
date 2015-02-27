@@ -12,20 +12,21 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/project.css" rel="stylesheet">
-	{{> headerPartials home}}
+	<script>
+		checkCookie();
+	</script>
 </head>
 
 <body>
+{{>topNav}}
 <div class = "container">
 	<div class = "header" style="margin-bottom:5%">
-		<h2 align="center" style="margin-top:5%" ><font color="#FFFFFF"> Edit Schedule </font></h2>
+		<h2 align="center" style="margin-top:5%" ><font color="#FFFFFF">Current Tasks</font></h2>
 	</div>
 	<div class = "list" align="left">
-		<h3><font color="#FFFFFF">Current Tasks</font></h3>
 		<div class = "clicktoedit" id = "clicktoedit">
 			<p style="margin-top:0.5%">
 				<font  color="#FFFFFF"> Click a task below to edit</font> 	
-				<a href='/addTask' style="margin-left:1%">Add task?</a>
 			</p>
 		</div>
 		
@@ -35,6 +36,6 @@
 		</div>
 	</div>
 </div>
-
+{{>botNav}}
 </body>
 </html>

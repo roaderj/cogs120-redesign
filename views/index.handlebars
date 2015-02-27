@@ -14,19 +14,21 @@
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/fullcalendar.css" rel="stylesheet">
 	<link href="css/project.css" rel="stylesheet">
-	{{> headerPartials home}}
+	<script>
+		checkCookie();
+	</script>
 </head>
 
 <body>
+{{>topNav}}
 <div class = "container">
-	<div class = "header">
-		<h1 align="center" style="margin-top:5%">I Schedule 4 U</font></h1>
-	</div>
 	<div class = "images" style="margin-top:2%;padding-bottom:5%" align="center">
 		<h2> Current Schedule</h2>
+		<br>
+		<br>
 		<div class='schedule' id='calendar'></div>
 	</div>
 </div>
-
+{{>botNav}}
 </body>
 </html>

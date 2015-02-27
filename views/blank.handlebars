@@ -10,13 +10,16 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/project.css" rel="stylesheet">
-	{{> headerPartials home}}
+	<script>
+		checkCookie();
+	</script>
 </head>
 
 <body>
- 	<div class = "container">
+{{>topNav}}
+<div class = "container">
 
-	</div>
+</div>
+{{>botNav}}
 </body>
-	
 </html>
